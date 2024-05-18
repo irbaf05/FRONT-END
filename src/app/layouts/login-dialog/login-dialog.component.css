@@ -1,0 +1,75 @@
+.full-width {
+  width: 100%;
+}
+
+.dialog-content {
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px; /* Ajusta el tamaño del logo aquí */
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.action-buttons button {
+  width: 80%; /* Ajusta este valor según sea necesario */
+  margin-bottom: 10px; /* Espacio entre los botones */
+}
+
+
+.login-button {
+  background-color: #92297C;/* Color morado */
+  color: white !important; /* Color del texto blanco */
+  font-weight: bold;
+}
+
+.cancel-button {
+  background-color: #3DB6B1;/* Color turquesa */
+  color: white !important; /* Color del texto blanco */
+  font-weight: bold;
+}
+
+.register-link, .forgot-password-link {
+  display: block;
+  margin-top: 10px;
+  color: inherit;
+}
+
+.additional-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button.mat-button {
+  min-width: 100px; /* Asegúrate de que los botones tengan un tamaño mínimo */
+}
+
+/* Estilos para mantener el fondo gris cuando el usuario escribe */
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #f0f0f0; /* Fondo gris */
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex.mat-focused {
+  background-color: #f0f0f0; /* Fondo gris al enfocarse */
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex .mat-input-element {
+  background-color: transparent; /* Mantener el fondo transparente */
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex .mat-input-element:focus {
+  background-color: transparent; /* Mantener el fondo transparente al enfocarse */
+}

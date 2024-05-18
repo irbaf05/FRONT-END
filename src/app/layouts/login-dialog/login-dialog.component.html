@@ -1,0 +1,24 @@
+<mat-dialog-content class="dialog-content">
+  <div class="logo-container">
+    <img src="assets/img/LOGASO.png" alt="LOGO" class="logo">
+  </div>
+  <h2 mat-dialog-title>Iniciar Sesión</h2>
+  <form>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Correo</mat-label>
+      <input matInput type="email" name="correo" placeholder="Ingresa tu correo" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Contraseña</mat-label>
+      <input matInput type="password" name="password" placeholder="Ingresa tu contraseña" required>
+    </mat-form-field>
+    <div mat-dialog-actions align="end" class="action-buttons">
+      <button mat-button mat-dialog-close class="cancel-button">Cancelar</button>
+      <button mat-button type="submit" class="login-button">Iniciar Sesión</button>
+    </div>
+  </form>
+  <mat-dialog-actions class="additional-actions">
+    <a href="/register" class="register-link">Regístrate</a>
+    <a href="/forgot-password" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
+  </mat-dialog-actions>
+</mat-dialog-content>
