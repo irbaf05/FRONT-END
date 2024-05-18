@@ -32,8 +32,6 @@
   align-items: center;
 }
 
-
-
 .convocatoria img{
   width: 600px;
   height: 600px;
@@ -45,10 +43,12 @@
 .unetenos{
   font-family: "League Spartan", sans-serif;
   background-color: #ED117F;
-  color: white;
   border-radius: 15px;
   border: none;
   font-size: 64px;
+}
+
+.unetenos{
   padding: 10px 20px;
   transition: background-color 0.3s;
   cursor: pointer;

@@ -12,6 +12,8 @@ import {MatDialogModule} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
+import {RegisterUserComponent} from "./pages/register/register-user/register-user.component";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import {FormsModule} from "@angular/forms";
     HeaderComponent,
     FooterComponent,
     WelcomeContentComponent,
-    LoginDialogComponent
+    LoginDialogComponent,
+    RegisterUserComponent
   ],
   imports: [
     BrowserModule,
@@ -28,9 +31,10 @@ import {FormsModule} from "@angular/forms";
     MatDialogModule,
     MatButtonModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
