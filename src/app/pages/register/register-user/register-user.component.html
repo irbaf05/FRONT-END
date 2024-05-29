@@ -4,30 +4,29 @@
       <img src="assets/img/LOGASO.png" alt="LOGO" class="logo">
     </div>
     <h2 mat-dialog-title>Regístrate</h2>
-    <form>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Nombre</mat-label>
-        <input matInput type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+        <input matInput formControlName="nombre" placeholder="Ingresa tu nombre" required>
       </mat-form-field>
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Teléfono</mat-label>
-        <input matInput type="text" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+        <input matInput formControlName="telefono" placeholder="Ingresa tu teléfono">
       </mat-form-field>
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Correo electrónico</mat-label>
-        <input matInput type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+        <input matInput type="email" formControlName="correo" placeholder="Ingresa tu correo" required>
       </mat-form-field>
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Contraseña</mat-label>
-        <input matInput type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+        <input matInput type="password" formControlName="password" placeholder="Ingresa tu contraseña" required>
       </mat-form-field>
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Confirmar contraseña</mat-label>
-        <input matInput type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirma tu contraseña" required>
+        <input matInput type="password" formControlName="password_confirmation" placeholder="Confirma tu contraseña" required>
       </mat-form-field>
       <div mat-dialog-actions align="end" class="action-buttons">
         <button mat-button type="submit" class="register-button">Registrarse</button>
-
       </div>
     </form>
 

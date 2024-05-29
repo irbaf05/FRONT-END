@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, HammerGestureConfig} from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,9 +11,10 @@ import {AppRoutingModule} from "./app.routing.module";
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RegisterUserComponent} from "./pages/register/register-user/register-user.component";
 import {MatCardModule} from "@angular/material/card";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,16 +25,18 @@ import {MatCardModule} from "@angular/material/card";
     LoginDialogComponent,
     RegisterUserComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    MatDialogModule,
-    MatButtonModule,
-    MatInputModule,
-    FormsModule,
-    MatCardModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        MatDialogModule,
+        MatButtonModule,
+        MatInputModule,
+        FormsModule,
+        MatCardModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })
