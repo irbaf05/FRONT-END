@@ -13,12 +13,12 @@
       <input matInput type="password" name="password" placeholder="Ingresa tu contraseña" required>
     </mat-form-field>
     <div mat-dialog-actions align="end" class="action-buttons">
-      <button mat-button type="submit" class="login-button">Aceptar</button>
+      <button class="btn mt-4" (click)="onLogin()">Iniciar Sesión</button>
       <button mat-button mat-dialog-close class="cancel-button">Cancelar</button>
     </div>
   </form>
   <mat-dialog-actions class="additional-actions">
-    <a routerLink="/register" class="register-link">Regístrate</a>
+    <a routerLink="/ingreso/register" class="register-link">Regístrate</a>
     <a href="/forgot-password" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
   </mat-dialog-actions>
 </mat-dialog-content>

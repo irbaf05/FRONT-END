@@ -4,3 +4,20 @@ export interface User {
   correo: string;
   password: string;
 }
+
+export interface DatosActualizarUsuario {
+  nombre?: string;
+  telefono?: string;
+  correo?: string;
+  password?: string;
+}
+
+export interface Usuario {
+  id: number;
+  nombre: string;
+  telefono: string;
+  correo: string;
+  username: string;
+  enabled: boolean;
+  rol: string;
+}
