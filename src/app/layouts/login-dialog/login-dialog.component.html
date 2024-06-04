@@ -13,7 +13,7 @@
       <input matInput type="password" name="password" placeholder="Ingresa tu contraseña" required>
     </mat-form-field>
     <div mat-dialog-actions align="end" class="action-buttons">
-      <button class="btn mt-4" (click)="onLogin()">Iniciar Sesión</button>
+      <button mat-button mat-dialog-close class="btn mt-4 login-button" (click)="onLogin()">Iniciar Sesión</button>
       <button mat-button mat-dialog-close class="cancel-button">Cancelar</button>
     </div>
   </form>
